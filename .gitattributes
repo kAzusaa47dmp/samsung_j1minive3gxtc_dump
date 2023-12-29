@@ -1,0 +1,6 @@
+system/app/Chrome/Chrome.apk filter=lfs diff=lfs merge=lfs -text
+system/app/Maps/oat/arm/Maps.odex filter=lfs diff=lfs merge=lfs -text
+system/app/SBrowser_4_LATEST/SBrowser_4_LATEST.apk filter=lfs diff=lfs merge=lfs -text
+system/framework/arm/boot.oat filter=lfs diff=lfs merge=lfs -text
+system/framework/oat/arm/services.odex filter=lfs diff=lfs merge=lfs -text
+system/priv-app/Velvet/oat/arm/Velvet.odex filter=lfs diff=lfs merge=lfs -text
