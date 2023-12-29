@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<sllconfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sllconfig.xsd">
+  <!-- J1MINI PHONE CONFIG FILE -->
+  <Chip_Configuration>
+    <!-- IoPin5 is used for the External LNA (J1 Mini 3G)-->
+    <IoPin4>0</IoPin4>
+    <IoPin5>73</IoPin5>
+    <PinSWFunctions>6</PinSWFunctions>
+  </Chip_Configuration>
+
+  <StartupConfiguration>
+    <!-- Set this to No, for normal operation -->
+    <cpColdStartEnable>No</cpColdStartEnable>
+    <DataPort>/dev/ttyS2</DataPort>
+    <OnOffPort>/sys/class/sec/gps/GPS_PWR_EN/value</OnOffPort>
+    <ResetPort>/sys/class/sec/gps/GPS_RESET/value</ResetPort>
+  </StartupConfiguration>
+
+  <SETCaps>
+    <!-- Enable this and disable <isSupl20> to run SUPL1 -->
+    <IsSupl10>Yes</IsSupl10>
+    <!-- Enable this and disable <isSupl10> to run SUPL2 -->
+    <IsSupl20>No</IsSupl20>
+    <IsGlo>No</IsGlo>
+    <IsBds>No</IsBds>
+  </SETCaps>
+  
+  <GlueLayer>
+    <IsAngryGpsConfigEnable>Yes</IsAngryGpsConfigEnable>
+  </GlueLayer>
+
+</sllconfig>
